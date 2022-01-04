@@ -1,0 +1,22 @@
+#Deny Permission#
+
+{
+  "Id": "Policy1641241262096",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641241259924",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:CreateJob"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::hello098765",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::666229982288:user/komal"
+        ]
+      }
+    }
+  ]
+}

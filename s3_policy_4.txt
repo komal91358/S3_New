@@ -1,0 +1,20 @@
+{
+  "Id": "Policy1641241578497",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1641241576675",
+      "Action": [
+        "s3:DeleteBucketWebsite",
+        "s3:DeleteObject"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::hello098765",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::666229982288:user/komal"
+        ]
+      }
+    }
+  ]
+}
